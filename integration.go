@@ -46,7 +46,7 @@ type Usage struct {
 	TotalTokens      int `json:"total_tokens"`
 }
 
-func sendChatCompletion(
+func SendChatCompletion(
 	url string,
 	model string,
 	messages []Message,

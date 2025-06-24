@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// Example usage
 func main() {
 	url := "http://localhost:1234/v1/chat/completions"
 	model := "google/gemma-3-12b"
@@ -19,7 +20,6 @@ func main() {
 		return
 	}
 
-	// Print the assistant's reply
 	if len(response.Choices) > 0 {
 		fmt.Println("Assistant:", response.Choices[0].Message.Content)
 	} else {
