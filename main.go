@@ -14,7 +14,7 @@ func main() {
 	}
 	temperature := 0.7
 
-	response, err := sendChatCompletion(url, model, messages, temperature)
+	response, err := SendChatCompletion(url, model, messages, temperature)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
